@@ -64,6 +64,7 @@ public class Player : MonoBehaviour
         //
         // Feature 5 of the rubric should work after this.
 
+        other.gameObject.GetComponent<FloatAnimation>().StopAnimation();
 
         // STEP 6 -------------------------------------------------------------
     }
