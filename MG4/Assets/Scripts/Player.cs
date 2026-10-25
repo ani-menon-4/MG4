@@ -80,16 +80,16 @@ public class Player : MonoBehaviour
             switch (_currentEquationType)
             {
                 case EquationType.Add:
-                    // UNCOMMENT AFTER STEP 3
-                    //correct = CheckIfAdditionCorrect(number);
+                    // UNCOMMENT AFTER STEP 3 - done!
+                    correct = CheckIfAdditionCorrect(number);
                     break;
                 case EquationType.Subtract:
-                    // UNCOMMENT AFTER STEP 4
-                    //correct = CheckIfSubtractionCorrect(number);
+                    // UNCOMMENT AFTER STEP 4 - done!
+                    correct = CheckIfSubtractionCorrect(number);
                     break;
                 case EquationType.Multiply:
-                    // UNCOMMENT AFTER STEP 5
-                    //correct = CheckIfMultiplicationCorrect(number);
+                    // UNCOMMENT AFTER STEP 5 - done!
+                    correct = CheckIfMultiplicationCorrect(number);
                     break;
             }
         }
@@ -138,7 +138,10 @@ public class Player : MonoBehaviour
     // Feature 4 of the rubric should work after you finish all of the 3 methods
     //      in this file.
 
-    // private ??? CheckIfAdditionCorrect (??? ???)
+    private Boolean CheckIfAdditionCorrect (int ans)
+    {
+        return ans == _number1 + _number2;
+    }
 
     // STEP 3 -----------------------------------------------------------------
 
@@ -154,7 +157,10 @@ public class Player : MonoBehaviour
     // After you write this method, uncomment the line above that says
     //      "UNCOMMENT AFTER STEP 4".
 
-    // private ??? CheckIfSubtractionCorrect (??? ???)
+    private Boolean CheckIfSubtractionCorrect (int ans)
+    {
+        return ans == _number1 - _number2;
+    }
 
     // STEP 4 -----------------------------------------------------------------
 
@@ -170,7 +176,10 @@ public class Player : MonoBehaviour
     // After you write this method, uncomment the line above that says
     //      "UNCOMMENT AFTER STEP 5".
 
-    // private ??? CheckIfMultiplicationCorrect (??? ???)
+    private Boolean CheckIfMultiplicationCorrect (int ans)
+    {
+        return ans == _number1 * _number2;
+    }
 
     // STEP 5 -----------------------------------------------------------------
 
